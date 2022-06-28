@@ -25,7 +25,7 @@ public:
     void Remove(T value);    // Remove value from the tree
     bool Contains(T value);  // Determines if value is in the tree
 
-    int Size();     // Number of value in the tree
+    int Size();     // Number of values in the tree
 
     // These are used by the iterator
     void ResetIterator(Order traverseOrder);    // Initializes the Iterator
@@ -37,9 +37,9 @@ private:
         Node* right = nullptr;
         T value;
     };
+    
     Node* root;
     int numNodes;
-    queue<T> printQueue;
 
     // Used for de-constructor
     void DestroyTree(Node* node);
